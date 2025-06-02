@@ -1,0 +1,50 @@
+@media screen and (min-width: 375px){
+    body{
+        --bs-body-bg: #a4d2db;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        color: #152c42;
+    }
+
+    #searchForm{
+        background-color: #152c42;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        color: #ffeccc;
+    }
+}
+
+@media screen and (min-width: 800px){
+    body{
+        --bs-body-bg: #a4d2db;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        color: #152c42;
+    }
+
+        #searchForm{
+        background-color: #152c42;
+        color: #ffeccc;
+    }
+}
+
+@media screen and (min-width:1000px){
+    body{
+        --bs-body-bg: #a4d2db;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;  	
+        color: #152c42;
+    }
+
+        #searchForm{
+        background-color: #152c42;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        color: #ffeccc;
+    }
+}
