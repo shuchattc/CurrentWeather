@@ -11,4 +11,4 @@ const CitySchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Campground', CitySchema);
+module.exports = mongoose.model('City', CitySchema);

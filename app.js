@@ -1,11 +1,11 @@
-const search = document.getElementById("search");
-const city = document.getElementById("city");
-const c = document.getElementById("c");
 const form = document.querySelector('#searchForm');
+import dotenv from "dotenv";
+dotenv.config();
+const apiKey = process.env.API_KEY;
 
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
-    //searchs the api from the vaule in the city element
+    //searchs the api from the value in the city element
     const searchTerm = form.elements.query.value;
     if(!searchTerm){
         alert("Please Enter City");
@@ -13,7 +13,7 @@ form.addEventListener('submit', async function (e) {
     if(document.getElementById('temp_type_F').checked){
             //searchTerm is the value where you search the json files for object info
             try {
-                const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&&units=imperial&appid=e2efa9a3d7e02c383083ff28132f50d8`);
+                const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&&units=imperial&appid=${apiKey}`);
                 getWeather(res); // calls function that makes the weather display
               } catch (error) {
                 alert("Please make a valid entry, city not found.");
@@ -26,7 +26,7 @@ form.addEventListener('submit', async function (e) {
     form.elements.query.value = ''; //sets the search bar value back to blank
     }else if(document.getElementById('temp_type_C').checked){
         try {
-            const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&&units=metric&appid=e2efa9a3d7e02c383083ff28132f50d8`);
+            const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&&units=metric&appid=${apiKey}`);
             getWeather(res); // calls function that makes the weather display
           } catch (error) {
             alert("Please make a valid entry, city not found.");
