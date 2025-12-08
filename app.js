@@ -1,6 +1,7 @@
+const search = document.getElementById("search");
+const city = document.getElementById("city");
+const c = document.getElementById("c");
 const form = document.querySelector('#searchForm');
-import dotenv from "dotenv";
-dotenv.config();
 const apiKey = process.env.API_KEY;
 
 form.addEventListener('submit', async function (e) {

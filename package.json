@@ -1,6 +1,24 @@
 {
   "dependencies": {
-    "animejs": "^3.2.2"
+    "dotenv": "^17.2.3"
   },
-  "type": "module"
+  "type": "module",
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Practice doing fetch requests with Open Weather API v1.0 - Can currently pull from list of cities by entering the name of the city and will display the weather, temperature, and location of the city.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuchattc/CurrentWeather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuchattc/CurrentWeather/issues"
+  },
+  "homepage": "https://github.com/shuchattc/CurrentWeather#readme"
 }
