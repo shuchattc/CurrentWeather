@@ -1,12 +1,14 @@
 {
   "dependencies": {
-    "dotenv": "^17.2.3"
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
   },
   "type": "module",
   "name": "weather",
   "version": "1.0.0",
   "description": "Practice doing fetch requests with Open Weather API v1.0 - Can currently pull from list of cities by entering the name of the city and will display the weather, temperature, and location of the city.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
